@@ -17,8 +17,8 @@
     }
   })
   export default class TopStories extends Vue {
-    newsArticles: NewsArticle[] = [];
-    mounted() {
+    public newsArticles: NewsArticle[] = [];
+    public mounted() {
       newsService.getArticlesByType(ArticleType.TopStory)
         .then((newsArticles: NewsArticle[]) => {
           this.newsArticles = newsArticles;

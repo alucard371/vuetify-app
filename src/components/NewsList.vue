@@ -41,6 +41,6 @@
   import { NewsArticle } from '../types';
   @Component
   export default class NewsList extends Vue {
-    @Prop({required: true}) newsArticles!: NewsArticle[];
+    @Prop({required: true}) public newsArticles!: NewsArticle[];
   }
 </script>
